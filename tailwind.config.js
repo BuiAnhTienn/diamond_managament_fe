@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js,ts,jsx,tsx}'],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        bgBlur: 'rgba(0,0,0,0.05)',
-        secondaryColor: '#003468',
+        bgBlur: "rgba(0,0,0,0.05)",
+        secondaryColor: "#003468",
       },
     },
   },
@@ -14,3 +14,5 @@ module.exports = {
     preflight: false,
   },
 };
+
+//
