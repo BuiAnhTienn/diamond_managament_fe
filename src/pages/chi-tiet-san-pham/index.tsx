@@ -39,6 +39,8 @@ const ChiTietSanPham = () => {
   const [commentValue, setCommentValue] = useState<string>();
   const [quantity, setQuantity] = useState(0);
 
+
+  // doan code lay san pham
   const { data } = useQuery(["get-product-by-id"], () =>
     getProductById(paramsId.id as string)
   );

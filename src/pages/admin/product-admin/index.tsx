@@ -32,6 +32,8 @@ const ProductAdmin = () => {
   const [debouncedValue] = useDebounce(inputValue, 700);
   const navigate = useNavigate();
   const { showConfirmModal } = useConfirmModal();
+
+   // doan code lay danh sach san pham
   const { data, isFetching, refetch } = useQuery(
     ["product", paging, debouncedValue],
     async () => {
@@ -45,6 +47,8 @@ const ProductAdmin = () => {
     { refetchOnWindowFocus: false }
   );
 
+
+  // xoa san pham
   const { mutate: deleteProductMutate } = useMutation(deteleProduct, {
     onSuccess: () => {
       toast.success(`Xoá sản phẩm thành công!`);
