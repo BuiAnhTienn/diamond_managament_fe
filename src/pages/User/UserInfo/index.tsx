@@ -1,0 +1,45 @@
+import { Typography } from "antd";
+import React from "react";
+import { UserInfoContainer } from "./styled";
+import Button from "@components/Button";
+
+const UserInfo = () => {
+  return (
+    <UserInfoContainer>
+      <Typography className="heading ">Thông Tin Của Bạn</Typography>
+      <div className="content">
+        <div className="info-form">
+          <div className="form-field">
+            <Typography>Họ và tên:</Typography>
+            <input type="text" />
+          </div>
+          <div className="form-field">
+            <Typography>Email:</Typography>
+            <input type="text" />
+          </div>
+          <div className="form-field">
+            <Typography>Số điện thoại:</Typography>
+            <input type="text" />
+          </div>
+          <div className="form-field">
+            <Typography>Địa chỉ:</Typography>
+            <input type="text" />
+          </div>
+          <div className="save-btn">
+            <Button>Lưu</Button>
+          </div>
+        </div>
+        <div className="avatar">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+            className="ava-img"
+          />
+          <Typography>Huy rom`</Typography>
+        </div>
+      </div>
+    </UserInfoContainer>
+  );
+};
+
+export default UserInfo;

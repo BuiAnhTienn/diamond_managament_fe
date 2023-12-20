@@ -1,0 +1,15 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s linear infinite; /* 2s là thời gian mỗi chu kỳ quay, linear là kiểu chuyển động, infinite để chạy vô hạn */
+  }
